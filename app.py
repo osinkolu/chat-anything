@@ -32,7 +32,7 @@ root = Root(session)
 svc = root.databases[SNOWFLAKE_CONFIG["database"]].schemas[SNOWFLAKE_CONFIG["schema"]].cortex_search_services[SNOWFLAKE_CONFIG["search_service"]]
 
 # Streamlit App
-st.title("QA Agent")
+st.title("Chat Anything 🗨️")
 
 # Sidebar Navigation
 st.sidebar.title("Navigation")
