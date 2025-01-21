@@ -41,7 +41,7 @@ with st.sidebar:
         page = option_menu(
             menu_title=None,
             options = ["Chat", "Upload Files", "Manage Documents", "About"],
-            icons=["snow", "cloud-upload", "file-earmark-diff", "plus"],
+            icons=["snow", "cloud-upload", "file-earmark-diff", "plus-circle"],
         )
 
 if page == "Upload Files":
