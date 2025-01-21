@@ -12,3 +12,4 @@ groq
 beautifulsoup4
 streamlit_option_menu
 youtube-transcript-api
+openai
