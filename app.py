@@ -40,8 +40,8 @@ st.sidebar.title("Navigation")
 with st.sidebar:
         page = option_menu(
             menu_title=None,
-            options = ["Chat", "Upload Files", "Manage Documents"],
-            icons=["chat-right-text-fill", "cloud-upload", "file-earmark-diff"],
+            options = ["Chat", "Upload Files", "Manage Documents", "About"],
+            icons=["snow", "cloud-upload", "file-earmark-diff", "plus"],
         )
 
 if page == "Upload Files":
@@ -268,3 +268,11 @@ elif page == "Manage Documents":
                 st.error(f"Error deleting selected documents: {e}")
     else:
         st.info("No documents available to manage.")
+
+elif page == "About":
+    # Open and read the README.md file
+    with open("README.md", "r", encoding="utf-8") as readme_file:
+        readme_content = readme_file.read()
+    
+    # Render the markdown content in Streamlit
+    st.markdown(readme_content, unsafe_allow_html=True)
