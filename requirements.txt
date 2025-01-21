@@ -1,0 +1,14 @@
+snowflake-snowpark-python
+flask
+snowflake
+langchain
+pandas
+PyPDF2
+docx2txt
+python-docx
+moviepy
+pytube
+groq
+beautifulsoup4
+streamlit_option_menu
+youtube-transcript-api
